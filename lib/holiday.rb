@@ -113,7 +113,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_supplies.each do |key,value|
     value.each do |holiday, vestival|
           if vestival.include? "BBQ"
-             arr.unshift[holiday]
+             arr.push[holiday]
           end
     end
   end
